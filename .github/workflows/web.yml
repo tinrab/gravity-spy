@@ -24,9 +24,9 @@ jobs:
       - name: Install Rust and the browser target
         run: rustup toolchain install stable --profile minimal --component clippy --target wasm32-unknown-unknown
       - name: Install wasm-pack
-        run: cargo install wasm-pack --version 0.15.0 --locked
-      - name: Browser Clippy
-        run: cargo +stable clippy --target wasm32-unknown-unknown --lib --locked -- -D warnings
+        uses: taiki-e/install-action@v2
+        with:
+          tool: wasm-pack@0.15.0
       - name: Install just
         uses: extractions/setup-just@v3
       - name: Build
@@ -36,7 +36,7 @@ jobs:
         with:
           path: target/web
   deploy:
-    if: github.event_name == 'workflow_dispatch' && inputs.deploy
+    if: github.event_name == 'push' || inputs.deploy
     needs: build
     runs-on: ubuntu-latest
     permissions:
