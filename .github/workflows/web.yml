@@ -1,0 +1,52 @@
+name: Web build and Pages
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: Deploy to GitHub Pages (enable Pages with GitHub Actions first)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: web-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install Rust and the browser target
+        run: rustup toolchain install stable --profile minimal --component clippy --target wasm32-unknown-unknown
+      - name: Install wasm-pack
+        run: cargo install wasm-pack --version 0.15.0 --locked
+      - name: Browser Clippy
+        run: cargo +stable clippy --target wasm32-unknown-unknown --lib --locked -- -D warnings
+      - name: Install just
+        uses: extractions/setup-just@v3
+      - name: Build
+        run: just web
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: target/web
+  deploy:
+    if: github.event_name == 'workflow_dispatch' && inputs.deploy
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Spy;
+  src: url("./assets/fonts/PressStart2P-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+  background: #071008;
+  color: #b7d5ab;
+}
+body {
+  margin: 0;
+}
+main {
+  width: min(1280px, 96vw);
+  margin: 28px auto;
+}
+header {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+h1 {
+  font-family: Spy, monospace;
+  font-size: clamp(18px, 3vw, 28px);
+  color: #d2ecc5;
+  margin: 0;
+}
+header p {
+  font-size: 14px;
+  margin: 0;
+}
+#game {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #060e03;
+}
+#game-canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+#game-canvas:focus-visible {
+  outline: 2px solid #b9e893;
+  outline-offset: 3px;
+}
+#launcher {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 16px;
+  padding: 20px;
+  text-align: center;
+  background: #060e03;
+}
+#launcher[hidden] {
+  display: none;
+}
+#status {
+  max-width: 48ch;
+  margin: 0;
+}
+button {
+  font:
+    16px Spy,
+    monospace;
+  color: #091305;
+  background: #b9e893;
+  border: 0;
+  padding: 18px 24px;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: wait;
+}
+button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+.controls {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.note {
+  font-size: 13px;
+  color: #87a47d;
+}

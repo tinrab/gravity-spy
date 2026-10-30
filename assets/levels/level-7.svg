@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:gs="urn:gravity-spy:level:1" viewBox="-768 -1984 2944 3072">
+  <title>Level 7</title>
+  <desc>Run around the solid purple platform. Loose squares follow the same nearest-surface gravity.</desc>
+  <metadata>
+    <gs:level id="level-7" order="7">
+      <gs:palette background="#291823" terrain="#864d72" outline="#c380b0" spy-dark="#4c2c41" spy-light="#ff8cde" trail="#ffc0ee" crate="#ff8cde" goal="#ffb3e8" sensor-safe="#dfdc88" sensor-warning="#eee8a0" sensor-danger="#ff448b" />
+      <gs:reference source="original-video" start="1256.0" end="1277.0">Outer right and upper/lower profiles measured from frames 1256-1264. The center is solid; dark rectangular areas in the footage are not collision holes. Unseen left edges mirror the measured right profile. Satellite agents sit outside the terrain; sensor timing remains approximate.</gs:reference>
+    </gs:level>
+  </metadata>
+  <defs>
+    <polygon id="satellite-octagon" points="64,0 96,0 160,64 160,96 96,160 64,160 0,96 0,64" />
+  </defs>
+  <g id="terrain" fill="#864d72">
+    <path id="terrain-main-platform" d="M480 -1152 H768 L864 -1056 H1056 L1152 -960 H1184 L1312 -864 V-672 L1408 -576 V-256 L1312 -192 V0 L1056 256 H864 L768 352 H480 L384 256 H192 L-64 0 V-192 L-160 -256 V-576 L-64 -672 V-864 L64 -960 H96 L192 -1056 H384 Z" fill-rule="evenodd" />
+    <use id="terrain-satellite-1" href="#satellite-octagon" x="1376" y="-1344" />
+    <use id="terrain-satellite-2" href="#satellite-octagon" x="1376" y="-224" />
+    <use id="terrain-satellite-3" href="#satellite-octagon" x="1248" y="288" />
+    <use id="terrain-satellite-west-lower" href="#satellite-octagon" x="64" y="288" />
+    <use id="terrain-satellite-west-upper" href="#satellite-octagon" x="96" y="-1344" />
+  </g>
+  <circle id="spawn" cx="660" cy="370" r="16" fill="#ff8cde" />
+  <circle id="goal" cx="608" cy="-1174" r="29" fill="#ffb3e8" opacity="0.2" />
+  <circle id="light-background" cx="-18000" cy="-12000" r="100000" fill="#4c2c41" data-gs-intensity="1" opacity="0.02" />
+  <rect id="crate-bottom-0" x="480" y="355" width="16" height="16" />
+  <rect id="crate-bottom-1" x="497" y="355" width="16" height="16" />
+  <rect id="crate-bottom-2" x="514" y="355" width="16" height="16" />
+  <rect id="crate-bottom-3" x="531" y="355" width="16" height="16" />
+  <rect id="crate-bottom-4" x="548" y="355" width="16" height="16" />
+  <rect id="crate-bottom-5" x="565" y="355" width="16" height="16" />
+  <rect id="crate-bottom-6" x="582" y="355" width="16" height="16" />
+  <rect id="crate-bottom-7" x="599" y="355" width="16" height="16" />
+  <rect id="crate-bottom-8" x="616" y="355" width="16" height="16" />
+  <rect id="crate-bottom-9" x="633" y="355" width="16" height="16" />
+  <rect id="crate-top-0" x="560" y="-1170" width="16" height="16" />
+  <rect id="crate-top-1" x="577" y="-1170" width="16" height="16" />
+  <rect id="crate-top-2" x="594" y="-1170" width="16" height="16" />
+  <rect id="crate-top-3" x="611" y="-1170" width="16" height="16" />
+  <rect id="crate-top-4" x="628" y="-1170" width="16" height="16" />
+  <rect id="crate-top-5" x="645" y="-1170" width="16" height="16" />
+  <rect id="crate-top-6" x="662" y="-1170" width="16" height="16" />
+  <circle id="agent-southwest" cx="160" cy="504" r="3" fill="#ffe55b" data-gs-angle="0" data-gs-phase="0.1" data-gs-sweep="40" data-gs-range="500" data-gs-fov="65" />
+  <circle id="agent-southeast" cx="1372" cy="-144" r="3" fill="#ffe55b" data-gs-angle="180" data-gs-phase="0.2" data-gs-sweep="40" data-gs-range="500" data-gs-fov="65" />
+  <circle id="agent-northeast" cx="1480" cy="-1360" r="3" fill="#ffe55b" data-gs-angle="110" data-gs-phase="0.15" data-gs-sweep="40" data-gs-range="500" data-gs-fov="65" />
+  <circle id="agent-northwest" cx="180" cy="-1370" r="3" fill="#ffe55b" data-gs-angle="60" data-gs-phase="0.3" data-gs-sweep="40" data-gs-range="500" data-gs-fov="65" />
+</svg>

@@ -1,0 +1,72 @@
+[package]
+name = "gravity-spy"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+bevy = { version = "=0.19.0", default-features = false, features = [
+  "std",
+  "async_executor",
+  "bevy_asset",
+  "bevy_state",
+  "bevy_color",
+  "bevy_core_pipeline",
+  "bevy_render",
+  "bevy_sprite",
+  "bevy_sprite_render",
+  "bevy_gizmos",
+  "bevy_gizmos_render",
+  "bevy_text",
+  "bevy_ui",
+  "bevy_ui_render",
+  "bevy_window",
+  "bevy_winit",
+  "bevy_log",
+  "default_font",
+  "bevy_audio",
+  "mp3",
+  "wav",
+  "png",
+] }
+bevy_rapier2d = { version = "=0.36.0", default-features = false, features = [
+  "dim2",
+  "debug-render-2d",
+] }
+earcutr = "0.5"
+i_overlay = "9"
+kurbo = "0.13"
+ron = "0.12"
+roxmltree = "0.21"
+serde = { version = "1", features = ["derive"] }
+svgtypes = "0.16"
+xmlwriter = "0.1"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+bevy = { version = "=0.19.0", default-features = false, features = ["multi_threaded", "x11"] }
+directories = "6"
+tempfile = "3"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+bevy = { version = "=0.19.0", default-features = false, features = ["webgl2"] }
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = ["Window", "Storage"] }
+js-sys = "0.3"
+
+# Rust's release profile optimizes the code. Strip WASM symbols without repeating that pass.
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["--strip-debug"]
+
+[profile.dev]
+opt-level = 1
+debug = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

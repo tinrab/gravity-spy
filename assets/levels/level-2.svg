@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:gs="urn:gravity-spy:level:1" viewBox="-800 -1600 2600 2400">
+  <title>Level 2</title>
+  <desc>Cross the red octagons and reach the upper platform. Hold your course through the long jumps.</desc>
+  <metadata>
+    <gs:level id="level-2" order="2">
+      <gs:palette background="#29100f" terrain="#883534" outline="#ba6666" spy-dark="#4c1f1e" spy-light="#ff6670" crate="#ff6670" trail="#ffa3b0" goal="#e66b78" sensor-safe="#ffdc44" sensor-warning="#ffe55b" sensor-danger="#ff3429" />
+      <gs:movement jump-speed="720" />
+      <gs:reference source="original-video" start="95" end="125">Three octagons measured from overlapping views at 96, 101, 103, 104, and 105 seconds. Long-jump impulse and sensor sweeps remain calibrated approximations.</gs:reference>
+    </gs:level>
+  </metadata>
+  <defs>
+    <polygon id="octagon" points="-32,-96 32,-96 96,-32 96,32 32,96 -32,96 -96,32 -96,-32" />
+  </defs>
+  <g id="terrain" fill="#883534">
+    <use id="terrain-start" href="#octagon" />
+    <use id="terrain-middle" href="#octagon" x="448" y="-480" />
+    <use id="terrain-destination" href="#octagon" x="832" y="-864" />
+  </g>
+  <circle id="spawn" cx="-68" cy="82" r="16" fill="#ff6670" />
+  <circle id="goal" cx="832" cy="-978" r="29" fill="#e66b78" opacity="0.2" />
+  <g fill="#ffdf55">
+    <circle id="agent-lower" cx="32" cy="-140" r="3" data-gs-angle="30" data-gs-sweep="70" data-gs-range="460" data-gs-fov="80" data-gs-phase="0.12" />
+    <circle id="agent-middle" cx="480" cy="-380" r="3" data-gs-angle="90" data-gs-sweep="70" data-gs-range="480" data-gs-fov="85" data-gs-phase="0.4" />
+    <circle id="agent-upper" cx="768" cy="-784" r="3" data-gs-angle="55" data-gs-sweep="65" data-gs-range="480" data-gs-fov="85" data-gs-phase="0.2" />
+  </g>
+  <circle id="light-background" cx="6000" cy="18000" r="100000" fill="#53231e" data-gs-intensity="1" opacity="0.02" />
+</svg>

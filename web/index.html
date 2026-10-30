@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071008" />
+    <title>Gravity Spy</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./game.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Gravity Spy</h1>
+        <p>Gravity follows the nearest surface.</p>
+      </header>
+      <div id="game">
+        <canvas
+          id="game-canvas"
+          tabindex="0"
+          aria-label="Gravity Spy game. Keyboard controls are listed below."
+        ></canvas>
+        <div id="launcher">
+          <p id="status" role="status">Loading game…</p>
+          <button id="play" type="button" disabled>Play</button>
+          <noscript>This game requires JavaScript and WebGL2.</noscript>
+        </div>
+      </div>
+      <p class="controls">
+        A/D or arrows to move · Space to jump · P to pause · R to retry<br />Tab or Esc for levels ·
+        M to mute · +/− for volume
+      </p>
+      <p class="note">
+        Keyboard required. Click the game to focus it. Settings and best times are saved in this
+        browser.
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:gs="urn:gravity-spy:level:1" viewBox="-608 -416 2272 2304">
+  <title>Level 4</title>
+  <desc>Transfer between the blue diamonds and descend to the small exit ledge.</desc>
+  <metadata>
+    <gs:level id="level-4" order="4">
+      <gs:palette background="#0e1820" terrain="#304f63" outline="#658ca5" spy-dark="#1d303d" spy-light="#80bee5" trail="#9fcfe6" crate="#80bee5" goal="#80bee5" />
+      <gs:reference source="original-video" start="781.0" end="812.0">Terrain measured from overlapping source frames and a 32-unit grid. Sensor positions and timing are approximations; unseen edges follow the visible repeated shapes.</gs:reference>
+    </gs:level>
+  </metadata>
+  <defs>
+    <polygon id="satellite-octagon" points="64,0 96,0 160,64 160,96 96,160 64,160 0,96 0,64" />
+    <polygon id="diamond" points="0,-64 64,0 0,64 -64,0" />
+  </defs>
+  <g id="terrain" fill="#304f63">
+    <path id="terrain-region-17" d="M 448 1088 L 512 1088 L 512 1120 L 448 1120 Z" fill-rule="evenodd" />
+    <use id="terrain-diamond-1" href="#diamond" x="960" y="288" />
+    <use id="terrain-diamond-2" href="#diamond" x="320" y="320" />
+    <use id="terrain-diamond-3" href="#diamond" x="704" y="352" />
+    <use id="terrain-diamond-4" href="#diamond" x="128" y="480" />
+    <use id="terrain-diamond-5" href="#diamond" x="544" y="512" />
+    <use id="terrain-diamond-6" href="#diamond" x="832" y="512" />
+    <use id="terrain-diamond-7" href="#diamond" x="352" y="576" />
+    <use id="terrain-diamond-8" href="#diamond" x="800" y="704" />
+    <use id="terrain-diamond-9" href="#diamond" x="192" y="768" />
+    <use id="terrain-diamond-10" href="#diamond" x="544" y="800" />
+    <use id="terrain-diamond-11" href="#diamond" x="960" y="864" />
+    <use id="terrain-diamond-12" href="#diamond" x="672" y="960" />
+    <use id="terrain-diamond-13" href="#diamond" x="256" y="992" />
+    <use id="terrain-diamond-14" href="#diamond" x="864" y="1056" />
+    <use id="terrain-diamond-15" href="#diamond" x="96" y="1120" />
+    <use id="terrain-diamond-16" href="#diamond" x="384" y="1184" />
+    <use id="terrain-diamond-17" href="#diamond" x="640" y="1184" />
+  </g>
+  <circle id="spawn" cx="632" cy="335" r="16" fill="#80bee5" />
+  <circle id="goal" cx="480" cy="1066" r="29" fill="#80bee5" opacity="0.2" />
+  <circle id="light-background" cx="-12000" cy="-18000" r="100000" fill="#1d303d" data-gs-intensity="1" opacity="0.02" />
+  <circle id="agent-1" cx="250" cy="320" r="3" fill="#ffe55b" data-gs-angle="145" data-gs-phase="0" data-gs-sweep="50" data-gs-range="400" data-gs-fov="80" />
+  <circle id="agent-4" cx="474" cy="512" r="3" fill="#ffe55b" data-gs-angle="145" data-gs-phase="0" data-gs-sweep="50" data-gs-range="400" data-gs-fov="80" />
+  <circle id="agent-7" cx="730" cy="704" r="3" fill="#ffe55b" data-gs-angle="145" data-gs-phase="0" data-gs-sweep="50" data-gs-range="400" data-gs-fov="80" />
+  <circle id="agent-10" cx="890" cy="864" r="3" fill="#ffe55b" data-gs-angle="145" data-gs-phase="0" data-gs-sweep="50" data-gs-range="400" data-gs-fov="80" />
+  <circle id="agent-13" cx="794" cy="1056" r="3" fill="#ffe55b" data-gs-angle="145" data-gs-phase="0" data-gs-sweep="50" data-gs-range="400" data-gs-fov="80" />
+  <circle id="agent-16" cx="570" cy="1184" r="3" fill="#ffe55b" data-gs-angle="145" data-gs-phase="0" data-gs-sweep="50" data-gs-range="400" data-gs-fov="80" />
+</svg>

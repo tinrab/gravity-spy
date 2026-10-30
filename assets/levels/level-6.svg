@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:gs="urn:gravity-spy:level:1" viewBox="-1824 -288 3328 3328">
+  <title>Level 6</title>
+  <desc>Follow the nested gray corridors into the central exit chamber.</desc>
+  <metadata>
+    <gs:level id="level-6" order="6">
+      <gs:palette background="#222625" terrain="#777979" outline="#b1b5b5" spy-dark="#424747" spy-light="#e7eeee" trail="#f5ffff" crate="#e7eeee" goal="#e7eeee" />
+      <gs:reference source="original-video" start="1180" end="1248">The final uninterrupted attempt supplies the nested maze. Failed attempts were excluded because camera resets duplicated walls in the first mosaic. Walls are 32 units thick; sensor poses and timing remain approximations.</gs:reference>
+    </gs:level>
+  </metadata>
+  <defs>
+    <polygon id="satellite-octagon" points="64,0 96,0 160,64 160,96 96,160 64,160 0,96 0,64" />
+  </defs>
+  <g id="terrain" fill="#777979">
+    <path id="terrain-region-0" d="M-736 832 H-448 V864 H-704 V1792 H-64 V864 H-288 V832 H-32 V1824 H-736 Z" fill-rule="evenodd" />
+    <path id="terrain-region-1" d="M-832 544 H320 V1920 H288 V576 H-832 Z" fill-rule="evenodd" />
+    <path id="terrain-region-2" d="M -992 512 L -960 512 L -960 2176 L -768 2176 L -768 2208 L -992 2208 Z" fill-rule="evenodd" />
+    <path id="terrain-region-3" d="M-576 992 H-192 V1632 H-224 V1024 H-544 V1632 H-576 Z" fill-rule="evenodd" />
+    <path id="terrain-region-4" d="M -576 352 L -576 384 L -1152 384 L -1152 1056 L -1184 1056 L -1184 352 Z" fill-rule="evenodd" />
+    <path id="terrain-region-5" d="M 864 384 L 864 1056 L 832 1056 L 832 416 L 320 416 L 320 384 Z" fill-rule="evenodd" />
+    <path id="terrain-region-6" d="M -864 640 L -352 640 L -352 672 L -832 672 L -832 1312 L -864 1312 Z" fill-rule="evenodd" />
+    <path id="terrain-region-7" d="M -1184 1792 L -1152 1792 L -1152 2368 L -608 2368 L -608 2400 L -1184 2400 Z" fill-rule="evenodd" />
+    <path id="terrain-region-8" d="M 128 1344 L 160 1344 L 160 1984 L -352 1984 L -352 1952 L 128 1952 Z" fill-rule="evenodd" />
+    <path id="terrain-region-9" d="M -544 2176 L 544 2176 L 544 2208 L -544 2208 Z" fill-rule="evenodd" />
+    <path id="terrain-region-10" d="M 864 1792 L 864 2400 L 384 2400 L 384 2368 L 832 2368 L 832 1792 Z" fill-rule="evenodd" />
+    <path id="terrain-region-11" d="M -448 1248 L -320 1248 L -320 1280 L -448 1280 Z" fill-rule="evenodd" />
+  </g>
+  <circle id="spawn" cx="768" cy="366" r="16" fill="#e7eeee" />
+  <circle id="goal" cx="-384" cy="1226" r="29" fill="#e7eeee" opacity="0.2" />
+  <circle id="light-background" cx="18000" cy="-12000" r="100000" fill="#424747" data-gs-intensity="1" opacity="0.02" />
+  <circle id="agent-outer" cx="808.0" cy="560" r="3" fill="#ffe55b" data-gs-angle="180" data-gs-phase="0.1" data-gs-sweep="40" data-gs-range="480" data-gs-fov="65" />
+  <circle id="agent-south" cx="-272.0" cy="2130" r="3" fill="#ffe55b" data-gs-angle="270" data-gs-phase="0.2" data-gs-sweep="40" data-gs-range="480" data-gs-fov="65" />
+  <circle id="agent-west" cx="-912.0" cy="1120" r="3" fill="#ffe55b" data-gs-angle="0" data-gs-phase="0.3" data-gs-sweep="40" data-gs-range="480" data-gs-fov="65" />
+  <circle id="agent-inner" cx="-16.0" cy="1400" r="3" fill="#ffe55b" data-gs-angle="180" data-gs-phase="0.2" data-gs-sweep="40" data-gs-range="480" data-gs-fov="65" />
+</svg>

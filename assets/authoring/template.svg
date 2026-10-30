@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:gs="urn:gravity-spy:level:1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="-640 -360 1280 720">
+  <title>My level</title>
+  <desc>Copy this outside assets/levels while designing. SVG user units equal game units. IDs and data-gs-* attributes define gameplay.</desc>
+  <metadata>
+    <gs:level id="my-level" order="100">
+      <gs:palette background="#0b1420" terrain="#36536b" spy-dark="#22374d" spy-light="#b3e4fa" crate="#b3e4fa"/>
+      <gs:movement jump-speed="340"/>
+    </gs:level>
+  </metadata>
+  <defs>
+    <rect id="loose-square" width="16" height="16"/>
+  </defs>
+  <g id="terrain" inkscape:groupmode="layer" inkscape:label="Terrain" fill="#36536b">
+    <rect x="-560" y="120" width="1120" height="60" rx="16"/>
+    <path fill="#658cac" fill-rule="evenodd" d="M -100 -80 H 100 V 80 H -100 Z M -60 -40 H 60 V 40 H -60 Z"/>
+    <path d="M 260 120 C 300 120 290 20 360 20 Q 430 20 460 120 Z"/>
+  </g>
+  <g id="objects" inkscape:groupmode="layer" inkscape:label="Objects">
+    <circle id="spawn" cx="-450" cy="102" r="16" fill="#b3e4fa"/>
+    <circle id="goal" cx="500" cy="100" r="24" fill="#88eecc" opacity="0.25"/>
+    <use id="crate-demo" href="#loose-square" x="-380" y="102" fill="#b3e4fa"/>
+    <rect id="agent-guard" x="-308" y="-158" width="16" height="16" fill="#ffffff" data-gs-angle="90" data-gs-range="500" data-gs-fov="60"/>
+    <text id="hint-demo" x="-530" y="-280" data-gs-size="12" fill="#b3e4fa">F5 reloads. F1 shows object IDs and patrol routes.</text>
+  </g>
+  <g id="guides" inkscape:groupmode="layer" inkscape:label="Patrols and lights" opacity="0.2">
+    <line id="patrol-guard" x1="-300" y1="-150" x2="300" y2="-150" data-gs-speed="60" stroke="#ffcc55"/>
+    <circle id="light-background" cx="-1800" cy="-2000" r="6500" fill="#31536d" data-gs-intensity="0.7"/>
+    <circle id="light-spot" cx="450" cy="-240" r="420" fill="#80bbff" data-gs-fov="70" data-gs-angle="110" data-gs-intensity="0.4"/>
+    <rect id="camera-bounds" x="-640" y="-360" width="1280" height="720" fill="none" stroke="#88bbff"/>
+  </g>
+</svg>

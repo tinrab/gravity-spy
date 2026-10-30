@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="-1000 -2240 2000 2880" data-gs-id="level-1" data-gs-order="1" data-gs-background="#191b13" data-gs-terrain="#747260" data-gs-outline="#b9b7a1" data-gs-spy-dark="#454639" data-gs-spy-light="#f2f3d0">
+  <title>Level 1</title>
+  <desc>Reconstructed from the original video at 00:50–01:28. The platform sizes and column spacing are measured; sensor timing remains approximate.</desc>
+  <g id="terrain" fill="#747260">
+    <polygon points="-304,0 304,0 400,96 400,128 304,224 -304,224 -400,128 -400,96"/>
+    <rect x="-272" y="-608" width="64" height="448"/>
+    <rect x="176" y="-608" width="64" height="448"/>
+    <rect x="-272" y="-768" width="512" height="64"/>
+    <rect x="-272" y="-1376" width="64" height="448"/>
+    <rect x="176" y="-1376" width="64" height="448"/>
+    <polygon points="-304,-1728 304,-1728 400,-1632 400,-1600 304,-1504 -304,-1504 -400,-1600 -400,-1632"/>
+  </g>
+  <circle id="spawn" cx="-96" cy="-18" r="16" fill="#f2f3d0"/>
+  <circle id="goal" cx="0" cy="-1746" r="29" fill="#f2f3d0" opacity="0.2"/>
+  <g fill="#f2f3d0">
+    <rect id="crate-start-0" x="-270" y="-18" width="16" height="16"/>
+    <rect id="crate-start-1" x="-252" y="-18" width="16" height="16"/>
+    <rect id="crate-start-2" x="-234" y="-18" width="16" height="16"/>
+    <rect id="crate-start-3" x="-216" y="-18" width="16" height="16"/>
+    <rect id="crate-start-4" x="-198" y="-18" width="16" height="16"/>
+    <rect id="crate-start-5" x="-180" y="-18" width="16" height="16"/>
+    <rect id="crate-start-6" x="-162" y="-18" width="16" height="16"/>
+    <rect id="crate-start-7" x="-144" y="-18" width="16" height="16"/>
+    <rect id="crate-stack-0" x="-252" y="-36" width="16" height="16"/>
+    <rect id="crate-stack-1" x="-198" y="-36" width="16" height="16"/>
+    <rect id="crate-column-0" x="242" y="-560" width="16" height="16"/>
+    <rect id="crate-column-1" x="242" y="-520" width="16" height="16"/>
+    <rect id="crate-column-2" x="242" y="-496" width="16" height="16"/>
+    <rect id="crate-column-3" x="242" y="-448" width="16" height="16"/>
+    <rect id="crate-column-4" x="242" y="-424" width="16" height="16"/>
+    <rect id="crate-column-5" x="242" y="-368" width="16" height="16"/>
+    <rect id="crate-bridge-0" x="-80" y="-786" width="16" height="16"/>
+    <rect id="crate-bridge-1" x="-44" y="-786" width="16" height="16"/>
+    <rect id="crate-bridge-2" x="-26" y="-786" width="16" height="16"/>
+    <rect id="crate-upper-0" x="-280" y="-1400" width="16" height="16"/>
+    <rect id="crate-upper-1" x="-224" y="-1394" width="16" height="16"/>
+    <rect id="crate-goal-0" x="210" y="-1746" width="16" height="16"/>
+    <rect id="crate-goal-1" x="228" y="-1746" width="16" height="16"/>
+    <rect id="crate-goal-2" x="292" y="-1746" width="16" height="16"/>
+    <rect id="crate-under-0" x="-120" y="-1502" width="16" height="16"/>
+    <rect id="crate-under-1" x="-72" y="-1502" width="16" height="16"/>
+    <rect id="crate-under-2" x="88" y="-1502" width="16" height="16"/>
+  </g>
+  <g fill="#fff8bc">
+    <circle id="agent-lower-left" cx="-276" cy="-240" r="3" data-gs-angle="110" data-gs-sweep="75" data-gs-range="430" data-gs-fov="70" data-gs-phase="0.12"/>
+    <circle id="agent-lower-right" cx="244" cy="-544" r="3" data-gs-angle="-20" data-gs-sweep="65" data-gs-range="450" data-gs-fov="65" data-gs-phase="0.4"/>
+    <circle id="agent-upper-left" cx="-276" cy="-1008" r="3" data-gs-angle="110" data-gs-sweep="75" data-gs-range="430" data-gs-fov="70" data-gs-phase="0.3"/>
+    <circle id="agent-upper-right" cx="244" cy="-1312" r="3" data-gs-angle="-20" data-gs-sweep="65" data-gs-range="450" data-gs-fov="65" data-gs-phase="0.7"/>
+    <circle id="agent-goal" cx="176" cy="-1744" r="3" data-gs-angle="-30" data-gs-sweep="75" data-gs-range="600" data-gs-fov="70" data-gs-phase="0.12"/>
+  </g>
+  <circle id="light-background" cx="-18000" cy="-12000" r="100000" fill="#48483a" data-gs-intensity="1" opacity="0.03"/>
+  <rect id="camera-bounds" x="-1000" y="-2240" width="2000" height="2880" fill="none" stroke="#88bbff"/>
+</svg>

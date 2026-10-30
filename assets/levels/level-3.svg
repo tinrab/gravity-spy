@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:gs="urn:gravity-spy:level:1" viewBox="-640 -1888 3072 3072">
+  <title>Level 3</title>
+  <desc>Climb the ochre platforms, pass the upper rooms, and return to the recessed exit.</desc>
+  <metadata>
+    <gs:level id="level-3" order="3">
+      <gs:palette background="#252115" terrain="#7d734a" outline="#b5aa77" spy-dark="#47422a" spy-light="#fff3b4" trail="#fff3b4" crate="#fff3b4" goal="#fff3b4" />
+      <gs:reference source="original-video" start="139" end="352">Terrain measured from overlapping source frames and a 32-unit grid. Sensor positions and timing are approximations; unseen edges follow the visible repeated shapes. Spawn aligned with the 224-unit starting ledge shared by frames 139 and 286.</gs:reference>
+    </gs:level>
+  </metadata>
+  <defs>
+    <polygon id="satellite-octagon" points="64,0 96,0 160,64 160,96 96,160 64,160 0,96 0,64" />
+    <polygon id="opening-island" points="32,0 160,0 192,32 192,64 160,96 32,96 0,64 0,32" />
+  </defs>
+  <g id="terrain" fill="#7d734a">
+    <path id="terrain-region-0" d="M 1216 32 L 1216 128 L 544 128 L 544 32 Z" fill-rule="evenodd" />
+    <path id="terrain-region-1" d="M 800 -1184 L 800 -1088 L 768 -1088 L 768 -1152 L 192 -1152 L 192 -736 L 288 -736 L 288 -704 L 160 -704 L 160 -1184 Z" fill-rule="evenodd" />
+    <path id="terrain-region-2" d="M 288 -384 L 288 -352 L 32 -352 L 32 384 L 0 384 L 0 -384 Z" fill-rule="evenodd" />
+    <path id="terrain-region-3" d="M 1024 -960 L 1024 -800 L 1664 -800 L 1664 -768 L 1216 -768 L 1216 -608 L 1184 -608 L 1184 -768 L 992 -768 L 992 -960 Z" fill-rule="evenodd" />
+    <path id="terrain-region-4" d="M 1760 -1248 L 1760 -1216 L 1024 -1216 L 1024 -1088 L 992 -1088 L 992 -1248 Z" fill-rule="evenodd" />
+    <path id="terrain-region-5" d="M 576 -192 L 576 -160 L 288 -160 L 288 384 L 256 384 L 256 -192 Z" fill-rule="evenodd" />
+    <path id="terrain-region-6" d="M 800 -416 L 832 -384 L 960 -384 L 992 -416 L 1184 -416 L 1184 -384 L 1024 -384 L 1024 -352 L 768 -352 L 768 -384 L 608 -384 L 608 -416 Z" fill-rule="evenodd" />
+    <path id="terrain-region-7" d="M 800 -864 L 800 -768 L 608 -768 L 608 -608 L 576 -608 L 576 -704 L 384 -704 L 384 -736 L 576 -736 L 576 -800 L 768 -800 L 768 -864 Z" fill-rule="evenodd" />
+    <path id="terrain-region-8" d="M 1088 -224 L 1472 -224 L 1472 -192 L 1088 -192 Z" fill-rule="evenodd" />
+    <path id="terrain-region-9" d="M 1024 -544 L 1024 -480 L 992 -480 L 960 -512 L 832 -512 L 800 -480 L 768 -480 L 768 -544 Z" fill-rule="evenodd" />
+    <path id="terrain-region-10" d="M 1440 -1056 L 1440 -960 L 1344 -960 L 1344 -1056 Z" fill-rule="evenodd" />
+    <path id="terrain-region-11" d="M 512 -992 L 512 -896 L 416 -896 L 416 -992 Z" fill-rule="evenodd" />
+    <path id="terrain-region-12" d="M 960 512 L 960 544 L 736 544 L 736 512 Z" fill-rule="evenodd" />
+    <path id="terrain-region-13" d="M 576 288 L 608 288 L 608 448 L 576 448 Z" fill-rule="evenodd" />
+    <path id="terrain-region-14" d="M 1088 288 L 1088 448 L 1056 448 L 1056 288 Z" fill-rule="evenodd" />
+    <path id="terrain-region-15" d="M 1728 -1088 L 1760 -1088 L 1760 -992 L 1728 -992 Z" fill-rule="evenodd" />
+    <path id="terrain-region-16" d="M1408 -448 H1632 V-416 H1408 Z" fill-rule="evenodd" />
+    <path id="terrain-region-17" d="M 1760 -960 L 1792 -960 L 1792 -896 L 1760 -896 Z" fill-rule="evenodd" />
+    <use id="terrain-opening-lower" href="#opening-island" x="1408" y="352" />
+    <use id="terrain-opening-upper" href="#opening-island" x="1888" y="96" />
+  </g>
+  <circle id="spawn" cx="834" cy="488" r="16" fill="#fff3b4" />
+  <circle id="goal" cx="896" cy="-404" r="29" fill="#fff3b4" opacity="0.2" />
+  <circle id="light-background" cx="-18000" cy="-12000" r="100000" fill="#47422a" data-gs-intensity="1" opacity="0.02" />
+  <circle id="agent-west" cx="144" cy="-600" r="3" fill="#ffe55b" data-gs-angle="0" data-gs-phase="0.12" data-gs-sweep="40" data-gs-range="450" data-gs-fov="65" />
+  <circle id="agent-room-west" cx="480" cy="-1080" r="3" fill="#ffe55b" data-gs-angle="90" data-gs-phase="0.32" data-gs-sweep="40" data-gs-range="380" data-gs-fov="65" />
+  <circle id="agent-room-east" cx="1392" cy="-1150" r="3" fill="#ffe55b" data-gs-angle="90" data-gs-phase="0.15" data-gs-sweep="40" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-central" cx="1120" cy="-160" r="3" fill="#ffe55b" data-gs-angle="130" data-gs-phase="0.2" data-gs-sweep="40" data-gs-range="480" data-gs-fov="65" />
+  <rect id="crate-lower-0" x="1444" y="334" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-lower-1" x="1461" y="334" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-lower-2" x="1478" y="334" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-lower-3" x="1495" y="334" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-lower-4" x="1512" y="334" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-lower-5" x="1529" y="334" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-lower-6" x="1546" y="334" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-upper-0" x="1924" y="78" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-upper-1" x="1941" y="78" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-upper-2" x="1958" y="78" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-upper-3" x="1975" y="78" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-upper-4" x="1992" y="78" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-upper-5" x="2009" y="78" width="16" height="16" fill="#fff3b4" />
+  <rect id="crate-upper-6" x="2026" y="78" width="16" height="16" fill="#fff3b4" />
+</svg>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:gs="urn:gravity-spy:level:1" viewBox="-640 -704 3648 1600">
+  <title>Level 5</title>
+  <desc>Cross the teal columns. The upper and lower rail gaps offer alternate routes.</desc>
+  <metadata>
+    <gs:level id="level-5" order="5">
+      <gs:palette background="#151f20" terrain="#46656a" outline="#80aaaa" spy-dark="#283a3b" spy-light="#a3e4e7" trail="#d2f5f5" crate="#a3e4e7" goal="#a3e4e7" />
+      <gs:reference source="original-video" start="1118.0" end="1152.0">Terrain measured from overlapping source frames and a 32-unit grid. Sensor positions and timing are approximations; unseen edges follow the visible repeated shapes. Eight 64-by-192 columns at 224-unit spacing; registration aliases were replaced with this measured repeated motif.</gs:reference>
+    </gs:level>
+  </metadata>
+  <defs>
+    <polygon id="satellite-octagon" points="64,0 96,0 160,64 160,96 96,160 64,160 0,96 0,64" />
+    <rect id="column" x="0" y="0" width="64" height="192" />
+    <rect id="rail" x="0" y="0" width="128" height="32" />
+  </defs>
+  <g id="terrain" fill="#46656a">
+    <path id="terrain-start" d="M0 0 H192 V32 H32 V224 H192 V256 H0 Z" />
+    <use id="terrain-column-0" href="#column" x="288" y="32" />
+    <use id="terrain-upper-0" href="#rail" x="256" y="-64" />
+    <use id="terrain-lower-0" href="#rail" x="256" y="288" />
+    <use id="terrain-column-1" href="#column" x="512" y="32" />
+    <use id="terrain-upper-1" href="#rail" x="480" y="-64" />
+    <use id="terrain-lower-1" href="#rail" x="480" y="288" />
+    <use id="terrain-column-2" href="#column" x="736" y="32" />
+    <use id="terrain-upper-2" href="#rail" x="704" y="-64" />
+    <use id="terrain-lower-2" href="#rail" x="704" y="288" />
+    <use id="terrain-column-3" href="#column" x="960" y="32" />
+    <use id="terrain-upper-3" href="#rail" x="928" y="-64" />
+    <use id="terrain-lower-3" href="#rail" x="928" y="288" />
+    <use id="terrain-column-4" href="#column" x="1184" y="32" />
+    <use id="terrain-upper-4" href="#rail" x="1152" y="-64" />
+    <use id="terrain-lower-4" href="#rail" x="1152" y="288" />
+    <use id="terrain-column-5" href="#column" x="1408" y="32" />
+    <use id="terrain-upper-5" href="#rail" x="1376" y="-64" />
+    <use id="terrain-lower-5" href="#rail" x="1376" y="288" />
+    <use id="terrain-column-6" href="#column" x="1632" y="32" />
+    <use id="terrain-upper-6" href="#rail" x="1600" y="-64" />
+    <use id="terrain-lower-6" href="#rail" x="1600" y="288" />
+    <use id="terrain-column-7" href="#column" x="1856" y="32" />
+    <use id="terrain-upper-7" href="#rail" x="1824" y="-64" />
+    <use id="terrain-lower-7" href="#rail" x="1824" y="288" />
+    <path id="terrain-exit" d="M2176 0 H2368 V256 H2176 L2144 224 V192 L2176 160 L2208 192 H2240 V160 H2304 V192 H2336 V64 H2208 L2176 96 L2144 64 V32 Z" />
+  </g>
+  <circle id="spawn" cx="48" cy="120" r="16" fill="#a3e4e7" />
+  <circle id="goal" cx="2272" cy="138" r="29" fill="#a3e4e7" opacity="0.2" />
+  <circle id="light-background" cx="18000" cy="128" r="100000" fill="#283a3b" data-gs-intensity="1" opacity="0.02" />
+  <circle id="agent-upper-0" cx="240.0" cy="-24" r="3" fill="#ffe55b" data-gs-angle="90" data-gs-phase="0.0" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-lower-0" cx="240.0" cy="280" r="3" fill="#ffe55b" data-gs-angle="270" data-gs-phase="0.3" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-upper-2" cx="688.0" cy="-24" r="3" fill="#ffe55b" data-gs-angle="90" data-gs-phase="0.14" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-lower-2" cx="688.0" cy="280" r="3" fill="#ffe55b" data-gs-angle="270" data-gs-phase="0.42" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-upper-4" cx="1136.0" cy="-24" r="3" fill="#ffe55b" data-gs-angle="90" data-gs-phase="0.28" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-lower-4" cx="1136.0" cy="280" r="3" fill="#ffe55b" data-gs-angle="270" data-gs-phase="0.54" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-upper-6" cx="1584.0" cy="-24" r="3" fill="#ffe55b" data-gs-angle="90" data-gs-phase="0.42000000000000004" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+  <circle id="agent-lower-6" cx="1584.0" cy="280" r="3" fill="#ffe55b" data-gs-angle="270" data-gs-phase="0.6599999999999999" data-gs-sweep="45" data-gs-range="400" data-gs-fov="65" />
+</svg>

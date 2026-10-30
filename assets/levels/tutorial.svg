@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1400 -640 2800 1280" data-gs-id="tutorial" data-gs-order="0" data-gs-background="#060e03" data-gs-terrain="#456621" data-gs-outline="#889f52">
+  <title>Tutorial</title>
+  <g id="terrain" fill="#456621">
+    <polygon points="-512,140 512,140 512,-20 480,-20 480,76 448,108 352,108 288,44 160,44 96,108 -448,108 -480,76 -480,-20 -512,-20" />
+    <rect x="-512" y="-180" width="32" height="64" />
+    <rect x="480" y="-180" width="32" height="64" />
+    <rect x="-512" y="-340" width="32" height="64" />
+    <rect x="480" y="-340" width="32" height="64" />
+  </g>
+  <circle id="spawn" cx="-352" cy="90" r="16" fill="#a8ed52" />
+  <circle id="goal" cx="224" cy="26" r="29" fill="#a8ed52" opacity="0.2" />
+  <rect id="crate-0" x="-156" y="90" width="16" height="16" fill="#a8ed52" />
+  <rect id="crate-1" x="-132" y="90" width="16" height="16" fill="#a8ed52" />
+  <circle id="agent-0" cx="-128" cy="-260" r="3" fill="#ffffff" data-gs-angle="94.53803619658582" data-gs-sweep="37.24225668350351" data-gs-phase="0.12" data-gs-range="780" data-gs-fov="60.160568488736445" />
+  <circle id="agent-1" cx="476" cy="-330" r="3" fill="#ffffff" data-gs-angle="128.91550390443524" data-gs-sweep="34.37746770784939" data-gs-phase="0.42" data-gs-range="1000" data-gs-fov="48.70141258611997" />
+  <circle id="light-background" cx="-18000" cy="-12000" r="100000" fill="#1b3008" data-gs-intensity="1" opacity="0.03" />
+  <text id="hint-instructions" x="-312" y="-160" data-gs-size="16" fill="#e0f5c9">1. Don't get detected by red sensors.
+2. Infiltrate the enemy base.
+3. Profit.</text>
+</svg>

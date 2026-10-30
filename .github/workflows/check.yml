@@ -1,0 +1,28 @@
+name: Desktop checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install Linux development libraries
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev libudev-dev libx11-dev libxi-dev libxrandr-dev libxkbcommon-dev
+      - name: Install Rust
+        run: rustup toolchain install stable --profile minimal --component rustfmt,clippy
+      - name: Formatting
+        run: cargo +stable fmt --check
+      - name: Clippy
+        run: cargo +stable clippy --all-targets --all-features --locked -- -D warnings
+      - name: Tests
+        run: cargo +stable test --locked
