@@ -70,6 +70,8 @@ just serve  # http://localhost:8000
 
 The output uses relative paths, so it can be hosted from any directory, such as GitHub Pages.
 
+The web version is available on https://tinrab.github.io/gravity-spy/.
+
 ## Levels
 
 Levels are SVG files in `assets/levels`.
